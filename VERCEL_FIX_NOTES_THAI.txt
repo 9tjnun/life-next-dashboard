@@ -1,0 +1,15 @@
+Life Next Dashboard v10.7 — Vercel Node 22 Fix
+
+แก้เพื่อแก้ปัญหา Vercel ตายตอน npm install:
+- บังคับ Node.js เป็น 22.x ผ่าน package.json engines และ .nvmrc
+- เพิ่ม vercel.json เพื่อบังคับ Install Command
+- ใช้ npm install --no-audit --no-fund --legacy-peer-deps
+- ยังเป็น lightweight planner/dashboard mode เหมือน v10.6
+- ไม่ใช้ OpenAI/Supabase ในเวอร์ชันนี้
+
+วิธีอัป:
+1. ล้างไฟล์ใน GitHub repo ให้สะอาด
+2. แตก zip นี้ในเครื่อง
+3. อัปไฟล์/โฟลเดอร์ข้างในขึ้น GitHub: app, components, lib, package.json, tsconfig.json, next.config.mjs, postcss.config.mjs, tailwind.config.ts, vercel.json, .npmrc, .nvmrc ฯลฯ
+4. อย่าอัป zip ทั้งก้อนขึ้น GitHub
+5. ใน Vercel สร้าง/Deploy ใหม่จาก repo เดิมได้เลย
